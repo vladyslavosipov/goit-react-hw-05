@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Field, Form, Formik } from "formik";
 import s from "./SearchBar.module.css";
 const SearchBar = ({ onSearch }) => {
