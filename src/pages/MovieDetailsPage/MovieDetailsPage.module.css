@@ -1,0 +1,59 @@
+.wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .container {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px;
+  }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .item {
+    list-style: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px;
+  }
+
+  .cast {
+    text-decoration: none;
+    color: black;
+    width: 20px;
+  }
+
+  .cast:hover {
+    color: darkgoldenrod;
+  }
