@@ -1,0 +1,27 @@
+.wrapper {
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    box-shadow: rgb(248, 246, 246) 0 5px;
+    margin-bottom: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+    color: darkgoldenrod;
+  }
+
+  .active {
+    color: red;
+    text-shadow: red 1px 0 10px;
+  }

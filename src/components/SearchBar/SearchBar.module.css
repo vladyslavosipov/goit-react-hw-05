@@ -1,0 +1,33 @@
+.container {
+    padding-left: 30px;
+  }
+  
+  .name {
+    margin-bottom: 20px;
+  }
+
+  .form {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+  }
+
+  .input {
+    outline: blue;
+    width: 240px;
+    height: 30px;
+  }
+
+  .button {
+    background-color: blue;
+    width: 90px;
+    border-radius: 8%;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transition-timing-function: ease-in;
+    background-color: rgb(10, 10, 189);
+  }
