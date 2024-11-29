@@ -1,6 +1,7 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { Field, Form, Formik } from "formik";
 import s from "./SearchBar.module.css";
+
 const SearchBar = ({ onSearch }) => {
   const handleSubmit = (values, { resetForm }) => {
     const query = values.query.trim();
@@ -31,6 +32,11 @@ const SearchBar = ({ onSearch }) => {
       </Formik>
     </div>
   );
+};
+
+
+SearchBar.propTypes = {
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default SearchBar;
