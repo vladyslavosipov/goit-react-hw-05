@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 import s from "../MovieList/MovieList.module.css";
 
-// eslint-disable-next-line react/prop-types
 const MovieList = ({ movies }) => {
   const location = useLocation();
   return (
@@ -15,13 +14,23 @@ const MovieList = ({ movies }) => {
               state={location}
               className={s.link}
             >
-              {movie.title}({movie.release_date.slice(0, 4)})
+              {movie.title} ({movie.release_date.slice(0, 4)})
             </Link>
           </li>
         ))}
       </ul>
     </div>
   );
+};
+
+MovieList.propTypes = {
+  movies: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      release_date: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default MovieList;
